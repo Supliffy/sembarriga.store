@@ -37,11 +37,11 @@
       max-width: 90%;
     }
     .black {
-      background-color: black;
+      background-color: orange;
       padding: 10px;
       text-align: center;
-      border-radius: 20px;
-      box-shadow: 0 0 10px 2px black;
+      border-radius: 10px;
+      box-shadow: 0 0 0px 0px black;
     }
     .answer {
       display: grid;
@@ -56,20 +56,20 @@
       }
     }
     .btn {
-      border-radius: 10px;
+      border-radius: 15px;
       padding: 5px 10px;
       font-size: 30px;
-      background-color: #f7ce6a;
+      background-color: #00ff2a;
       outline: none;
       text-decoration: none;
       color: black;
     }
     .black h1 {
-      color: yellow;
+      color: black;
     }
     .black p {
-      font-size: 18px;
-      color: white;
+      font-size: 25px;
+      color: black;
     }
     .hide {
       display: none;
@@ -101,8 +101,8 @@
 <div class="black">
 <div id="primeira">
 <div class="question">
-<h1>Pergunta 1</h1>
-<p>Você realmente quer descobrir esse segredo?</p>
+<h1></h1>
+<p>Você é mulher?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="segunda()">SIM</button>
@@ -111,8 +111,8 @@
 </div>
 <div id="segunda" class="hide">
 <div class="question">
-<h1>Pergunta 2</h1>
-<p>Você promete não revelar para ninguém?</p>
+<h1></h1>
+<p>Você tem interesse em perder peso?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="terceira()">SIM</button>
@@ -130,7 +130,7 @@
 </div>
 </div>
 </div>
-<p style="text-align: center; font-weight: bold;">© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Facebook, Inc.</p>
+<p style="text-align: center; font-weight: lighter;">© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Facebook, Inc.</p>
 </div>
 <script>
     function segunda() {
@@ -138,10 +138,7 @@
       document.getElementById("segunda").classList.remove("hide")
     }
     function terceira() {
-      document.getElementById("segunda").classList.add("hide")
-      document.getElementById("terceira").classList.remove("hide")
-    }
-    function redirect() {
+      document.getElementById("terceira").classList.add("hide")
       location.href = "https://sembarriga.store/"
     }
   </script>
