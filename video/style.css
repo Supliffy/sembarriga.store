@@ -6,7 +6,7 @@
 *, *::before, *::after {
 	box-sizing: border-box;
 	font-family: Gotham Rounded;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 body {
